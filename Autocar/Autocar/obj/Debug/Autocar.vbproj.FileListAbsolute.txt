@@ -1,0 +1,11 @@
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\bin\Debug\Autocar.exe.config
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\bin\Debug\Autocar.exe
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\bin\Debug\Autocar.pdb
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\bin\Debug\Autocar.xml
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\obj\Debug\Autocar.Form1.resources
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\obj\Debug\Autocar.Resources.resources
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\obj\Debug\Autocar.vbproj.GenerateResource.cache
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\obj\Debug\Autocar.vbproj.CoreCompileInputs.cache
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\obj\Debug\Autocar.exe
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\obj\Debug\Autocar.xml
+C:\Users\cruz\Documents\Visual Studio 2017\Projects\Autocar\Autocar\obj\Debug\Autocar.pdb

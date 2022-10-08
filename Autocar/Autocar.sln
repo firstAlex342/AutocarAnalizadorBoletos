@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Autocar", "Autocar\Autocar.vbproj", "{6DCCD811-5570-436E-8212-C4C79085C26F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DCCD811-5570-436E-8212-C4C79085C26F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCCD811-5570-436E-8212-C4C79085C26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCCD811-5570-436E-8212-C4C79085C26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCCD811-5570-436E-8212-C4C79085C26F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A4B4899-8F13-4536-B863-82BF0A1D505C}
+	EndGlobalSection
+EndGlobal
