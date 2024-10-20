@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AutocarDotacionesModelStoreContainer" CdmEntityContainer="AutocarDotacionesEntities">
+    <EntitySetMapping Name="Dotaciones">
+      <EntityTypeMapping TypeName="AutocarDotacionesModel.Dotaciones">
+        <MappingFragment StoreEntitySet="Dotaciones">
+          <ScalarProperty Name="FechaModificacion" ColumnName="FechaModificacion" />
+          <ScalarProperty Name="FechaAlta" ColumnName="FechaAlta" />
+          <ScalarProperty Name="serie" ColumnName="serie" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="contenidoDotacion" ColumnName="contenidoDotacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

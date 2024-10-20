@@ -17,7 +17,13 @@
     End Function
 
     Public Overrides Function ToString() As String  '-----overrides en vez de overloads porque???
-        Return (FolioInicial.ToString() & "     " & FolioFinal.ToString())
+        Dim numBoletosTexto As String
+        numBoletosTexto = "Numero boletos: " & Me.MisBoletos.Count.ToString()
+
+        Dim boleto As New Boleto("??", 0)
+        boleto = Me.MisBoletos(0)
+
+        Return (boleto.MiSerie & "  " & FolioInicial.ToString() & "  " & FolioFinal.ToString() & "    " & numBoletosTexto)
     End Function
 
     Public Sub AddBoleto(ByRef miBoleto As Boleto)

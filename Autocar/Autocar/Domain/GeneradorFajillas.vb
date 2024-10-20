@@ -1,11 +1,13 @@
 ﻿Public Class GeneradorFajillas
     Private _rangoInicial As Integer
     Private _rangoFinal As Integer
+    Private _serie As String
 
     '--------Constructor
-    Public Sub New(ByVal rangoInicial As Integer, ByVal rangoFinal As Integer)
+    Public Sub New(ByVal rangoInicial As Integer, ByVal rangoFinal As Integer, ByVal serie As String)
         Me.RangoInicial = rangoInicial
         Me.RangoFinal = rangoFinal
+        Me.Serie = serie
     End Sub
 
 
@@ -18,7 +20,7 @@
 
         Dim miFajilla As New Fajilla(0, 0)
         While (i <= RangoFinal)
-            Dim miBoleto As New Boleto("serie", i)
+            Dim miBoleto As New Boleto(Me.Serie, i)
             miFajilla.AddBoleto(miBoleto)
             If miBoleto.EsBoletoFinal() Or miBoleto.MiFolio = RangoFinal Then
                 miFajilla.InicializarFolioInicialYFolioFinal()
@@ -52,6 +54,15 @@
         End Get
         Set(value As Integer)
             _rangoFinal = value
+        End Set
+    End Property
+
+    Public Property Serie As String
+        Get
+            Return _serie
+        End Get
+        Set(value As String)
+            _serie = value
         End Set
     End Property
 End Class

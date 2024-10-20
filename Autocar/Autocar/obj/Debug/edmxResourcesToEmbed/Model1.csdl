@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutocarDotacionesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Dotaciones">
+    <Key>
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="folio" />
+    </Key>
+    <Property Name="serie" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="folio" Type="Int32" Nullable="false" />
+    <Property Name="contenidoDotacion" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="AutocarDotacionesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Dotaciones" EntityType="Self.Dotaciones" />
+  </EntityContainer>
+</Schema>

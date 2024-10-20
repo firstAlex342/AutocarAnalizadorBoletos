@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Dotacion">
+    <Key>
+      <PropertyRef Name="serie" />
+      <PropertyRef Name="folio" />
+    </Key>
+    <Property Name="serie" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="folio" Type="Int32" Nullable="false" />
+    <Property Name="contenidoDotacion" Type="String" MaxLength="130" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fechaAlta" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fechaModificacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="activo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Dotacion" EntityType="Self.Dotacion" />
+  </EntityContainer>
+</Schema>
