@@ -34,6 +34,7 @@ Partial Class Form3
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,9 +46,9 @@ Partial Class Form3
         Me.TableLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.78082!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.219178!))
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.DataGridView1, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 2)
@@ -57,7 +58,7 @@ Partial Class Form3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.24907!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.75057!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.00036!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(657, 338)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(684, 338)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'TableLayoutPanel2
@@ -66,23 +67,24 @@ Partial Class Form3
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel2.ColumnCount = 5
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox1, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button3, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox2, 3, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Button2, 3, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button2, 4, 1)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(597, 69)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(678, 69)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Label1
@@ -92,7 +94,7 @@ Partial Class Form3
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(3, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 20)
+        Me.Label1.Size = New System.Drawing.Size(91, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Serie"
         '
@@ -100,9 +102,9 @@ Partial Class Form3
         '
         Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(92, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(100, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(143, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(156, 26)
         Me.TextBox1.TabIndex = 1
         '
         'Label2
@@ -110,9 +112,9 @@ Partial Class Form3
         Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(241, 7)
+        Me.Label2.Location = New System.Drawing.Point(262, 7)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(83, 20)
+        Me.Label2.Size = New System.Drawing.Size(91, 20)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Folio"
         '
@@ -120,18 +122,19 @@ Partial Class Form3
         '
         Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(330, 4)
+        Me.TextBox2.Location = New System.Drawing.Point(359, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(143, 26)
+        Me.TextBox2.Size = New System.Drawing.Size(156, 26)
         Me.TextBox2.TabIndex = 3
         '
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel2.SetColumnSpan(Me.Button1, 2)
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(92, 37)
+        Me.Button1.Location = New System.Drawing.Point(3, 39)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(143, 28)
+        Me.Button1.Size = New System.Drawing.Size(200, 28)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Buscar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -141,9 +144,9 @@ Partial Class Form3
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button2.Enabled = False
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(330, 37)
+        Me.Button2.Location = New System.Drawing.Point(524, 39)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(143, 29)
+        Me.Button2.Size = New System.Drawing.Size(151, 28)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Nueva busqueda"
         Me.Button2.UseVisualStyleBackColor = True
@@ -160,7 +163,7 @@ Partial Class Form3
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
-        Me.DataGridView1.Size = New System.Drawing.Size(597, 155)
+        Me.DataGridView1.Size = New System.Drawing.Size(678, 155)
         Me.DataGridView1.TabIndex = 1
         '
         'TableLayoutPanel3
@@ -181,7 +184,7 @@ Partial Class Form3
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(597, 96)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(678, 96)
         Me.TableLayoutPanel3.TabIndex = 2
         '
         'Label3
@@ -189,9 +192,9 @@ Partial Class Form3
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(330, 14)
+        Me.Label3.Location = New System.Drawing.Point(374, 14)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(143, 20)
+        Me.Label3.Size = New System.Drawing.Size(163, 20)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Total"
         '
@@ -200,16 +203,28 @@ Partial Class Form3
         Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox3.Enabled = False
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(479, 11)
+        Me.TextBox3.Location = New System.Drawing.Point(543, 11)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(115, 26)
+        Me.TextBox3.Size = New System.Drawing.Size(132, 26)
         Me.TextBox3.TabIndex = 1
+        '
+        'Button3
+        '
+        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel2.SetColumnSpan(Me.Button3, 2)
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(265, 39)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(216, 28)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "Buscar en xml"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(681, 369)
+        Me.ClientSize = New System.Drawing.Size(708, 369)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "Form3"
         Me.Text = "Form3"
@@ -235,4 +250,5 @@ Partial Class Form3
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Button3 As Button
 End Class

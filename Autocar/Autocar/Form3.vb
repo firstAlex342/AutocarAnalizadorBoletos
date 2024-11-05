@@ -123,14 +123,25 @@
         Try
             If result = DialogResult.Yes Then
                 'Se elimina registro de la BD
-                Dim ctx As New Database1Entities()
-                Dim selectResul As IList(Of Dotacion) = (From s In ctx.Dotacion
-                                                         Where s.serie = TextBox1.Text And s.folio = TextBox2.Text And s.activo = True
-                                                         Select s).ToList()
-                Dim dotacionAux = selectResul.First()
-                dotacionAux.fechaModificacion = DateTime.Now
-                dotacionAux.activo = False
-                ctx.SaveChanges()
+                'Dim ctx As New Database1Entities()
+                'Dim selectResul As IList(Of Dotacion) = (From s In ctx.Dotacion
+                '                                         Where s.serie = TextBox1.Text And s.folio = TextBox2.Text And s.activo = True
+                '                                         Select s).ToList()
+                'Dim dotacionAux = selectResul.First()
+                'dotacionAux.fechaModificacion = DateTime.Now
+                'dotacionAux.activo = False
+                'ctx.SaveChanges()
+
+                Dim xelement2 As XElement = XElement.Load("Dotaciones.xml")
+                Dim lista = (From nm In xelement2.Elements("Dotacion")
+                             Select nm).ToList()
+                For Each addEle As XElement In lista
+                    If addEle.Element("serie") = TextBox1.Text And addEle.Element("folio") = TextBox2.Text Then
+                        addEle.Remove()
+                    End If
+                Next
+
+                xelement2.Save("Dotaciones.xml")
 
             End If
 
@@ -143,8 +154,62 @@
             DataGridView1.DataSource = DBNull.Value
             Button1.Enabled = True
             Button2.Enabled = False
+            Button3.Enabled = True
 
         Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Try
+            Dim xelement2 As XElement = XElement.Load("Dotaciones.xml")
+            Dim listaDeSelect = (From nm In xelement2.Elements("Dotacion")
+                                 Where nm.Element("serie") = TextBox1.Text And nm.Element("folio") = TextBox2.Text And CInt(nm.Element("activo")) = 1
+                                 Select nm).ToList()
+
+            Dim elementoBuscado = listaDeSelect.First()
+            Dim dataSetResultados As New DataSet()
+            dataSetResultados = GenerarDataSet()
+
+            Dim lista As IList(Of String) = elementoBuscado.Element("contenidoDotacion").Value.Split(New Char() {"]"c}, StringSplitOptions.RemoveEmptyEntries)
+            Dim totalBoletos As Integer = 0
+            lista.ToList().ForEach(Sub(item)
+                                       Dim cadenaSinCorchetes As String = item.Trim(New Char() {"["c})
+                                       Dim cadenasParaFilaDataGridView As String() = cadenaSinCorchetes.Split(New Char() {"-"c}, StringSplitOptions.RemoveEmptyEntries)
+
+                                       Dim newRow As DataRow = dataSetResultados.Tables("resumenDotaciones").NewRow()
+                                       newRow("Serie") = cadenasParaFilaDataGridView(0)
+                                       newRow("FolioInicial") = Int32.Parse(cadenasParaFilaDataGridView(1))
+                                       newRow("FolioFinal") = Int32.Parse(cadenasParaFilaDataGridView(2))
+                                       dataSetResultados.Tables("resumenDotaciones").Rows.Add(newRow)
+
+                                       'cuento cuantos boletos hay
+                                       totalBoletos = totalBoletos + Int32.Parse(cadenasParaFilaDataGridView(2)) - Int32.Parse(cadenasParaFilaDataGridView(1)) + 1
+                                   End Sub)
+
+            dataSetResultados.Tables("resumenDotaciones").AcceptChanges()
+            dataSetResultados.AcceptChanges()
+            PublicarResumen(dataSetResultados)
+            TextBox3.Text = totalBoletos.ToString()
+
+            TextBox1.Enabled = False
+            TextBox2.Enabled = False
+            Button3.Enabled = False
+            Button2.Enabled = True
+
+        Catch ex As Exception
+            'Se arregla el form para que regrese al estado inicial
+            TextBox1.Clear()
+            TextBox2.Clear()
+            TextBox1.Enabled = True
+            TextBox2.Enabled = True
+            TextBox3.Clear()
+            DataGridView1.DataSource = DBNull.Value
+            Button1.Enabled = True
+            Button2.Enabled = False
+            Button3.Enabled = True
             MessageBox.Show(ex.Message)
         End Try
 

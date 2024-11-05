@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.IO
+Imports System.Xml
+Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             LimpiarCkeckedListBox()
@@ -276,5 +278,27 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim form3 As New Form3()
         form3.ShowDialog()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Try
+            Dim empNM As XNamespace = "urn:lst-emp:emp"
+
+            Dim xDoc As New XDocument(New XDeclaration("1.0", "UTF-16", Nothing),
+                          New XElement(empNM + "Dotaciones.xml"))
+
+            Dim sw As New StringWriter()
+            Dim xWrite As XmlWriter = XmlWriter.Create(sw)
+            xDoc.Save(xWrite)
+            xWrite.Close()
+            xDoc.Save("Dotaciones.xml")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim form4 As New Form4()
+        form4.ShowDialog()
     End Sub
 End Class

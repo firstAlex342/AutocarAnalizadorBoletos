@@ -28,6 +28,7 @@ Partial Class Form2
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,6 +46,7 @@ Partial Class Form2
         Me.TableLayoutPanel1.Controls.Add(Me.DataGridView1, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.Button2, 1, 3)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 12)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
@@ -112,6 +114,16 @@ Partial Class Form2
         Me.TextBox1.Size = New System.Drawing.Size(191, 26)
         Me.TextBox1.TabIndex = 6
         '
+        'Button2
+        '
+        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.Location = New System.Drawing.Point(491, 228)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(191, 51)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Fusionar a XML"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -134,4 +146,5 @@ Partial Class Form2
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label3 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button2 As Button
 End Class

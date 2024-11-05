@@ -59,6 +59,8 @@ Partial Class Form1
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -71,7 +73,7 @@ Partial Class Form1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 11)
+        Me.Label1.Location = New System.Drawing.Point(3, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(55, 13)
         Me.Label1.TabIndex = 0
@@ -81,7 +83,7 @@ Partial Class Form1
         '
         Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 46)
+        Me.Label2.Location = New System.Drawing.Point(3, 40)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(55, 13)
         Me.Label2.TabIndex = 1
@@ -91,7 +93,7 @@ Partial Class Form1
         '
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(3, 11)
+        Me.Label3.Location = New System.Drawing.Point(3, 9)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(55, 13)
         Me.Label3.TabIndex = 2
@@ -101,7 +103,7 @@ Partial Class Form1
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 46)
+        Me.Label4.Location = New System.Drawing.Point(3, 40)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
         Me.Label4.TabIndex = 3
@@ -111,7 +113,7 @@ Partial Class Form1
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(3, 11)
+        Me.Label5.Location = New System.Drawing.Point(3, 9)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(117, 13)
         Me.Label5.TabIndex = 4
@@ -121,7 +123,7 @@ Partial Class Form1
         '
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(3, 46)
+        Me.Label6.Location = New System.Drawing.Point(3, 40)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(117, 13)
         Me.Label6.TabIndex = 5
@@ -131,7 +133,7 @@ Partial Class Form1
         '
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 11)
+        Me.Label7.Location = New System.Drawing.Point(3, 9)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(117, 13)
         Me.Label7.TabIndex = 6
@@ -141,7 +143,7 @@ Partial Class Form1
         '
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(3, 46)
+        Me.Label8.Location = New System.Drawing.Point(3, 40)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(117, 13)
         Me.Label8.TabIndex = 7
@@ -151,7 +153,7 @@ Partial Class Form1
         '
         Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(3, 11)
+        Me.Label9.Location = New System.Drawing.Point(3, 9)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(117, 13)
         Me.Label9.TabIndex = 8
@@ -161,7 +163,7 @@ Partial Class Form1
         '
         Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 46)
+        Me.Label10.Location = New System.Drawing.Point(3, 40)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(117, 13)
         Me.Label10.TabIndex = 9
@@ -170,7 +172,7 @@ Partial Class Form1
         'TextBox1
         '
         Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(125, 7)
+        Me.TextBox1.Location = New System.Drawing.Point(125, 5)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(119, 20)
         Me.TextBox1.TabIndex = 10
@@ -178,7 +180,7 @@ Partial Class Form1
         'TextBox2
         '
         Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox2.Location = New System.Drawing.Point(125, 43)
+        Me.TextBox2.Location = New System.Drawing.Point(125, 36)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(119, 20)
         Me.TextBox2.TabIndex = 11
@@ -186,7 +188,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox3.Location = New System.Drawing.Point(125, 7)
+        Me.TextBox3.Location = New System.Drawing.Point(125, 5)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(119, 20)
         Me.TextBox3.TabIndex = 12
@@ -194,7 +196,7 @@ Partial Class Form1
         'TextBox4
         '
         Me.TextBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox4.Location = New System.Drawing.Point(125, 43)
+        Me.TextBox4.Location = New System.Drawing.Point(125, 36)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(119, 20)
         Me.TextBox4.TabIndex = 13
@@ -202,7 +204,7 @@ Partial Class Form1
         'TextBox5
         '
         Me.TextBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox5.Location = New System.Drawing.Point(126, 7)
+        Me.TextBox5.Location = New System.Drawing.Point(126, 5)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(118, 20)
         Me.TextBox5.TabIndex = 14
@@ -210,7 +212,7 @@ Partial Class Form1
         'TextBox6
         '
         Me.TextBox6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox6.Location = New System.Drawing.Point(126, 43)
+        Me.TextBox6.Location = New System.Drawing.Point(126, 36)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(118, 20)
         Me.TextBox6.TabIndex = 15
@@ -218,7 +220,7 @@ Partial Class Form1
         'TextBox7
         '
         Me.TextBox7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox7.Location = New System.Drawing.Point(126, 7)
+        Me.TextBox7.Location = New System.Drawing.Point(126, 5)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(118, 20)
         Me.TextBox7.TabIndex = 16
@@ -226,7 +228,7 @@ Partial Class Form1
         'TextBox8
         '
         Me.TextBox8.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox8.Location = New System.Drawing.Point(126, 43)
+        Me.TextBox8.Location = New System.Drawing.Point(126, 36)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(118, 20)
         Me.TextBox8.TabIndex = 17
@@ -234,7 +236,7 @@ Partial Class Form1
         'TextBox9
         '
         Me.TextBox9.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox9.Location = New System.Drawing.Point(126, 7)
+        Me.TextBox9.Location = New System.Drawing.Point(126, 5)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(118, 20)
         Me.TextBox9.TabIndex = 18
@@ -242,7 +244,7 @@ Partial Class Form1
         'TextBox10
         '
         Me.TextBox10.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox10.Location = New System.Drawing.Point(126, 43)
+        Me.TextBox10.Location = New System.Drawing.Point(126, 36)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(118, 20)
         Me.TextBox10.TabIndex = 19
@@ -255,7 +257,7 @@ Partial Class Form1
         Me.CheckedListBox1.FormattingEnabled = True
         Me.CheckedListBox1.Location = New System.Drawing.Point(256, 3)
         Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(247, 64)
+        Me.CheckedListBox1.Size = New System.Drawing.Size(247, 49)
         Me.CheckedListBox1.TabIndex = 20
         '
         'CheckedListBox2
@@ -264,9 +266,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckedListBox2.FormattingEnabled = True
-        Me.CheckedListBox2.Location = New System.Drawing.Point(256, 80)
+        Me.CheckedListBox2.Location = New System.Drawing.Point(256, 71)
         Me.CheckedListBox2.Name = "CheckedListBox2"
-        Me.CheckedListBox2.Size = New System.Drawing.Size(247, 64)
+        Me.CheckedListBox2.Size = New System.Drawing.Size(247, 49)
         Me.CheckedListBox2.TabIndex = 21
         '
         'CheckedListBox3
@@ -275,9 +277,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckedListBox3.FormattingEnabled = True
-        Me.CheckedListBox3.Location = New System.Drawing.Point(256, 157)
+        Me.CheckedListBox3.Location = New System.Drawing.Point(256, 139)
         Me.CheckedListBox3.Name = "CheckedListBox3"
-        Me.CheckedListBox3.Size = New System.Drawing.Size(247, 64)
+        Me.CheckedListBox3.Size = New System.Drawing.Size(247, 49)
         Me.CheckedListBox3.TabIndex = 22
         '
         'CheckedListBox4
@@ -286,9 +288,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckedListBox4.FormattingEnabled = True
-        Me.CheckedListBox4.Location = New System.Drawing.Point(256, 234)
+        Me.CheckedListBox4.Location = New System.Drawing.Point(256, 207)
         Me.CheckedListBox4.Name = "CheckedListBox4"
-        Me.CheckedListBox4.Size = New System.Drawing.Size(247, 64)
+        Me.CheckedListBox4.Size = New System.Drawing.Size(247, 49)
         Me.CheckedListBox4.TabIndex = 23
         '
         'CheckedListBox5
@@ -297,9 +299,9 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.CheckedListBox5.FormattingEnabled = True
-        Me.CheckedListBox5.Location = New System.Drawing.Point(256, 311)
+        Me.CheckedListBox5.Location = New System.Drawing.Point(256, 275)
         Me.CheckedListBox5.Name = "CheckedListBox5"
-        Me.CheckedListBox5.Size = New System.Drawing.Size(247, 64)
+        Me.CheckedListBox5.Size = New System.Drawing.Size(247, 49)
         Me.CheckedListBox5.TabIndex = 24
         '
         'Button1
@@ -313,7 +315,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(509, 80)
+        Me.Button2.Location = New System.Drawing.Point(509, 71)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(128, 47)
         Me.Button2.TabIndex = 26
@@ -343,15 +345,18 @@ Partial Class Form1
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel6, 0, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.Button3, 2, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Button4, 2, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.Button5, 2, 4)
+        Me.TableLayoutPanel1.Controls.Add(Me.Button6, 2, 5)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 12)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 5
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(760, 385)
+        Me.TableLayoutPanel1.RowCount = 6
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.7!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(760, 414)
         Me.TableLayoutPanel1.TabIndex = 27
         '
         'TableLayoutPanel2
@@ -371,13 +376,13 @@ Partial Class Form1
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(247, 71)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(247, 62)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'TextBox11
         '
         Me.TextBox11.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox11.Location = New System.Drawing.Point(64, 7)
+        Me.TextBox11.Location = New System.Drawing.Point(64, 5)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(55, 20)
         Me.TextBox11.TabIndex = 12
@@ -394,18 +399,18 @@ Partial Class Form1
         Me.TableLayoutPanel3.Controls.Add(Me.Label3, 0, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.Label4, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.TextBox12, 1, 0)
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 80)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 71)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(247, 71)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(247, 62)
         Me.TableLayoutPanel3.TabIndex = 22
         '
         'TextBox12
         '
         Me.TextBox12.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox12.Location = New System.Drawing.Point(64, 7)
+        Me.TextBox12.Location = New System.Drawing.Point(64, 5)
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(55, 20)
         Me.TextBox12.TabIndex = 13
@@ -420,12 +425,12 @@ Partial Class Form1
         Me.TableLayoutPanel4.Controls.Add(Me.TextBox6, 1, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.Label5, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Label6, 0, 1)
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(3, 157)
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(3, 139)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(247, 71)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(247, 62)
         Me.TableLayoutPanel4.TabIndex = 23
         '
         'TableLayoutPanel5
@@ -438,12 +443,12 @@ Partial Class Form1
         Me.TableLayoutPanel5.Controls.Add(Me.TextBox8, 1, 1)
         Me.TableLayoutPanel5.Controls.Add(Me.Label7, 0, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.Label8, 0, 1)
-        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 234)
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 207)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 2
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(247, 71)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(247, 62)
         Me.TableLayoutPanel5.TabIndex = 24
         '
         'TableLayoutPanel6
@@ -456,17 +461,17 @@ Partial Class Form1
         Me.TableLayoutPanel6.Controls.Add(Me.TextBox10, 1, 1)
         Me.TableLayoutPanel6.Controls.Add(Me.Label9, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Label10, 0, 1)
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(3, 311)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(3, 275)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 2
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(247, 71)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(247, 62)
         Me.TableLayoutPanel6.TabIndex = 25
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(509, 157)
+        Me.Button3.Location = New System.Drawing.Point(509, 139)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(128, 45)
         Me.Button3.TabIndex = 27
@@ -475,12 +480,32 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(509, 234)
+        Me.Button4.Location = New System.Drawing.Point(509, 207)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(123, 50)
         Me.Button4.TabIndex = 28
         Me.Button4.Text = "Recuperar dotacion"
         Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button5.Location = New System.Drawing.Point(509, 288)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(248, 35)
+        Me.Button5.TabIndex = 29
+        Me.Button5.Text = "Mostrar dotaciones almacenadas (no se hizo)"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button6.Location = New System.Drawing.Point(509, 357)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(248, 40)
+        Me.Button6.TabIndex = 30
+        Me.Button6.Text = "Generar archivo XML vacio"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -542,4 +567,6 @@ Partial Class Form1
     Friend WithEvents TextBox11 As TextBox
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

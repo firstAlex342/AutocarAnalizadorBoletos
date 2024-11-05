@@ -1,4 +1,7 @@
-﻿Public Class Form2
+﻿Imports System.IO
+Imports System.Xml
+
+Public Class Form2
     Private _textoAinsertar As String
 
     Public Sub New(ByVal cadenaAInsertar As String)
@@ -167,5 +170,90 @@
         Me.DataGridView1.Columns("FolioInicial").SortMode = DataGridViewColumnSortMode.NotSortable
         Me.DataGridView1.Columns("FolioFinal").SortMode = DataGridViewColumnSortMode.NotSortable
         Me.DataGridView1.Columns("NumBoletosEnFajilla").SortMode = DataGridViewColumnSortMode.NotSortable
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        Try
+            Dim empNM As XNamespace = "urn:lst-emp:emp"
+
+            'Dim xDoc As New XDocument(New XDeclaration("1.0", "UTF-16", Nothing),
+            '            New XElement(empNM + "Employees",
+            '            New XElement("Employee",
+            '            New XComment("Only 3 elements for demo purposes"),
+            '            New XElement("EmpId", "5"),
+            '            New XElement("Name", "Kimmy"),
+            '            New XElement("Sex", "Female"))))
+
+            'crea el arbol employees (vacio)
+            '            Dim xDoc As New XDocument(New XDeclaration("1.0", "UTF-16", Nothing),
+            'New XElement(empNM + "Employees"))
+
+            '            Dim sw As New StringWriter()
+            '            Dim xWrite As XmlWriter = XmlWriter.Create(sw)
+            '            xDoc.Save(xWrite)
+            '            xWrite.Close()
+            '            xDoc.Save("Algo.xml")
+
+            'Cargar archivo completo y mostrar
+            'Dim xRead As XmlReader = XmlReader.Create("Algo.xml")
+            'Dim xEle As XElement = XElement.Load(xRead)
+            'MessageBox.Show(xEle)
+
+            'Anexa elementos
+            'Dim xEle As XElement = XElement.Load("Algo.xml")
+            'xEle.Add(New XElement("Employee",
+            '                  New XElement("EmpId", 8),
+            '                  New XElement("Name", "andres iniesta"),
+            '                   New XElement("Sex", "Male")))
+
+            'xEle.Save("Algo.xml")
+
+            'busca elemento
+            'Dim xelement2 As XElement = XElement.Load("Algo.xml")
+            'Dim name = From nm In xelement2.Elements("Employee")
+            '           Where CInt(nm.Element("EmpId")) = 7
+            '           Select nm
+
+            'For Each xElemento As XElement In name
+            '    MessageBox.Show(xElemento)
+            'Next xElemento
+
+            Button2.Enabled = False 'deshabilito el boton para que no molesten
+            Dim cadenasSinCocheteCierre As String() = Me.TextoAInsertar.Split(New Char() {"]"c}, StringSplitOptions.RemoveEmptyEntries)
+            Dim primeraCadena As String = cadenasSinCocheteCierre(0)
+            primeraCadena = primeraCadena.Trim(New Char() {"["c})
+            Dim elementosPrimeraCadena As String() = primeraCadena.Split(New Char() {"-"c}, StringSplitOptions.RemoveEmptyEntries)
+
+            Dim horaActual As DateTime
+            horaActual = DateTime.Now
+
+            'busca si elemento ya esta repetido
+            Dim xelement2 As XElement = XElement.Load("Dotaciones.xml")
+            Dim name = From nm In xelement2.Elements("Dotacion")     '!****ojo ve que no hay select en esta consulta***** !!!!!!
+                       Where CStr(nm.Element("serie")) = elementosPrimeraCadena(0) And CStr(nm.Element("folio")) = elementosPrimeraCadena(1)
+                       Select nm
+            If name.Count() >= 1 Then
+                'Ya esta este elemento en el archivo
+                Throw New Exception("Esta serie / folio ya esta en el archivo como campo llave, no se realizo inserción en archivo XML")
+            Else
+                'Anexa elementos
+                'Dim xEle As XElement = XElement.Load("Dotaciones.xml")
+                xelement2.Add(New XElement("Dotacion",
+                                  New XElement("serie", elementosPrimeraCadena(0)),
+                                  New XElement("folio", elementosPrimeraCadena(1)),
+                                   New XElement("contenidoDotacion", Me.TextoAInsertar),
+                                   New XElement("fechaAlta", horaActual),
+                                   New XElement("fechaModificacion", horaActual),
+                                   New XElement("activo", 1)))
+                xelement2.Save("Dotaciones.xml")
+            End If
+
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+
     End Sub
 End Class
