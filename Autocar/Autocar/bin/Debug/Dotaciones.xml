@@ -1,2 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Dotaciones.xml xmlns="urn:lst-emp:emp" />
+<Dotaciones.xml xmlns="urn:lst-emp:emp">
+  <Dotacion xmlns="">
+    <serie>J46</serie>
+    <folio>502761</folio>
+    <contenidoDotacion>[J46-502761-502800][J46-495751-495800][J46-495801-496100][J46-502801-503200]</contenidoDotacion>
+    <fechaAlta>2024-11-16T18:03:20.5628705-05:00</fechaAlta>
+    <fechaModificacion>2024-11-16T18:03:20.5628705-05:00</fechaModificacion>
+    <activo>1</activo>
+  </Dotacion>
+</Dotaciones.xml>

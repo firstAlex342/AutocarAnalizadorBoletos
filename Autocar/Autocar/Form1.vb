@@ -27,21 +27,29 @@ Public Class Form1
                 rangoInicial = Int32.Parse(TextBox5.Text)
                 rangoFinal = Int32.Parse(TextBox6.Text)
                 ValidarRangos(rangoInicial, rangoFinal)
-                'LLenarCheckedListBox(CheckedListBox3, rangoInicial, rangoFinal)
+                If CheckBox1.Checked Then
+                    LLenarCheckedListBox(CheckedListBox3, rangoInicial, rangoFinal, "???")
+                End If
+
             End If
 
             If (TextBox7.TextLength > 0 And TextBox8.TextLength > 0) Then
                 rangoInicial = Int32.Parse(TextBox7.Text)
                 rangoFinal = Int32.Parse(TextBox8.Text)
                 ValidarRangos(rangoInicial, rangoFinal)
-                'LLenarCheckedListBox(CheckedListBox4, rangoInicial, rangoFinal)
+                If CheckBox1.Checked Then
+                    LLenarCheckedListBox(CheckedListBox4, rangoInicial, rangoFinal, "???")
+                End If
+
             End If
 
             If (TextBox9.TextLength > 0 And TextBox10.TextLength > 0) Then
                 rangoInicial = Int32.Parse(TextBox9.Text)
                 rangoFinal = Int32.Parse(TextBox10.Text)
                 ValidarRangos(rangoInicial, rangoFinal)
-                'LLenarCheckedListBox(CheckedListBox5, rangoInicial, rangoFinal)
+                If CheckBox1.Checked Then
+                    LLenarCheckedListBox(CheckedListBox5, rangoInicial, rangoFinal, "???")
+                End If
             End If
 
         Catch ex As Exception

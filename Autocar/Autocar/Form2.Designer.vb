@@ -131,7 +131,6 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(709, 306)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "Form2"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()

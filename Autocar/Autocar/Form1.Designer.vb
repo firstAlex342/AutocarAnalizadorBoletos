@@ -61,6 +61,7 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -321,6 +322,7 @@ Partial Class Form1
         Me.Button2.TabIndex = 26
         Me.Button2.Text = "Limpiar checkedListBox y textboxes"
         Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Visible = False
         '
         'TableLayoutPanel1
         '
@@ -347,6 +349,7 @@ Partial Class Form1
         Me.TableLayoutPanel1.Controls.Add(Me.Button4, 2, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Button5, 2, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.Button6, 2, 5)
+        Me.TableLayoutPanel1.Controls.Add(Me.CheckBox1, 1, 5)
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(12, 12)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 6
@@ -477,6 +480,7 @@ Partial Class Form1
         Me.Button3.TabIndex = 27
         Me.Button3.Text = "ordernar fajillas menor a mayor"
         Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Visible = False
         '
         'Button4
         '
@@ -486,6 +490,7 @@ Partial Class Form1
         Me.Button4.TabIndex = 28
         Me.Button4.Text = "Recuperar dotacion"
         Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.Visible = False
         '
         'Button5
         '
@@ -496,6 +501,7 @@ Partial Class Form1
         Me.Button5.TabIndex = 29
         Me.Button5.Text = "Mostrar dotaciones almacenadas (no se hizo)"
         Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.Visible = False
         '
         'Button6
         '
@@ -506,6 +512,18 @@ Partial Class Form1
         Me.Button6.TabIndex = 30
         Me.Button6.Text = "Generar archivo XML vacio"
         Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.Visible = False
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(256, 368)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(247, 17)
+        Me.CheckBox1.TabIndex = 31
+        Me.CheckBox1.Text = "Solo funcion desglozar"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -516,6 +534,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel1.PerformLayout()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
@@ -569,4 +588,5 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
